@@ -23,6 +23,13 @@ class JurnalController extends Controller
 
      }
 
+      public function tampilkandata($id){
+        $data = Jurnal::find($id);
+        // dd($data);
+        return view('tampildata',compact('data'));
+            
+        
+     }
 
    }
 

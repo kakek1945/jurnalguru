@@ -21,3 +21,5 @@ Route::get('/jurnal',[JurnalController::class,'index'])->name('jurnal');
 
 Route::get('/tambahdata',[JurnalController::class,'tambahdata'])->name('tambahdata');
 Route::post('/insertdata',[JurnalController::class,'insertdata'])->name('insertdata');
+
+Route::get('/tampilkandata/{id}',[JurnalController::class,'tampilkandata'])->name('tampilkandata');
