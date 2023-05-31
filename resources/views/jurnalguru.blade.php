@@ -14,7 +14,7 @@
     <h1 class ="text-center mb-4">Jurnal Harian Guru</h1>
 
     <div class="container">
-        <a href="/tambahdata" type="button" class="btn btn-success">+ Tambah Data</a>
+        <a href="/tambahdata" class="btn btn-success">+ Tambah Data</a>
         <div class="row">
             <table class="table">
                 <thead>
@@ -43,7 +43,7 @@
                     <td>{{ $row->penilaian }}</td>
                     <td>
                         <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-info">Edit</button>
+                        <a href = "/tampilkandata/{{$row->id}}" class="btn btn-info">Edit</a>
                     </td>
                   </tr>
                   @endforeach

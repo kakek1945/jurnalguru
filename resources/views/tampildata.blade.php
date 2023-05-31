@@ -11,13 +11,13 @@
     <title>Jurnal Guru</title>
   </head>
   <body>
-    <h1 class ="text-center mb-4">Tambah Kegiatan Jurnal</h1>
+    <h1 class ="text-center mb-4">Edit Jurnal Harian</h1>
 
     <div class="container">
       <div class="row">
         <div class="card">
           <div class="class-body">
-            <form action="/insertdata" method="POST" enctype="multipart/form-data">
+            <form action="/insertdata" method="GET" enctype="multipart/form-data">
               @csrf
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Tanggal</label>

@@ -18,11 +18,18 @@ class JurnalController extends Controller
      }
 
      public function insertdata(Request $request){
-   //   dd($request->all());
+      // dd($request->all());
       Jurnal::create($request->all());
+      return redirect()-> route ('jurnal');
 
      }
 
+     public function tampilkandata(){
+      $data = Jurnal::find($id);
+      dd($data);
+     }
+    //   // return view ('tampildata', compact('data'));
+     
 
-   }
+}
 
