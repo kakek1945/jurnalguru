@@ -17,15 +17,27 @@
       <div class="row">
         <div class="card">
           <div class="class-body">
+<<<<<<< HEAD
             <form action="/insertdata" method="GET" enctype="multipart/form-data">
               @csrf
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Tanggal</label>
                 <input type="date" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+=======
+            <form action="" method="POST" enctype="multipart/form-data">
+              @csrf
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tanggal</label>
+                <input type="date" value="{{ $data->tanggal }}" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+>>>>>>> 36a2dd794edd058df5d54a9e01479d6bdcb158c9
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Kelas</label>
                 <select class="form-select" name="kelas" aria-label="Default select example">
+<<<<<<< HEAD
+=======
+                  </option selected >{{ $data->jeniskelamin }}</option>
+>>>>>>> 36a2dd794edd058df5d54a9e01479d6bdcb158c9
                   <option value="VII">VII</option>
                   <option value="VIII">VIII</option>
                   <option value="IX">IX</option>
@@ -33,6 +45,7 @@
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Pertemuan</label>
+<<<<<<< HEAD
                 <input type="number" name="pertemuan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
@@ -50,6 +63,26 @@
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Penilaian</label>
                 <input type="text" name="penilaian" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+=======
+                <input type="number" name="pertemuan" value="{{ $data->pertemuan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Materi Pokok</label>
+                <input type="text" name="materipokok" value="{{ $data->materipokok }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Kehadiran Siswa</label>
+                <input type="text" name="kehadiransiswa" value="{{ $data->kehadiransiswa }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama(a/s/i)">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Kegiatan Pembelajaran </label>
+                <!-- <textarea class="form-control" name="kegiatanpembelajaran" id="exampleFormControlTextarea1" rows="3"></textarea> -->
+                <input type="text" name="kehadiransiswa" value="{{ $data->kegiatanpembelajaran }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama(a/s/i) row="3" >
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Penilaian</label>
+                <input type="text" name="penilaian" value="{{ $data->penilaian }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+>>>>>>> 36a2dd794edd058df5d54a9e01479d6bdcb158c9
               </div>
              
               <div class="mb-3">

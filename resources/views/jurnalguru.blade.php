@@ -43,7 +43,11 @@
                     <td>{{ $row->penilaian }}</td>
                     <td>
                         <button type="button" class="btn btn-danger">Delete</button>
+<<<<<<< HEAD
                         <a href = "/tampilkandata/{{$row->id}}" class="btn btn-info">Edit</a>
+=======
+                        <a href="/tampilkandata/{{ $row->id }}" class="btn btn-info">Edit</a>
+>>>>>>> 36a2dd794edd058df5d54a9e01479d6bdcb158c9
                     </td>
                   </tr>
                   @endforeach
